@@ -4,6 +4,10 @@ Kubernetes環境向けに、負荷をかけたり、外部呼び出しをした�
 
 メモリーやCPUの負荷処理は https://github.com/dotnet/samples/tree/master/core/diagnostics/DiagnosticScenarios を参考にしています。
 
+## Docker Hub
+
+https://hub.docker.com/repository/docker/tanakatakayoshi/k8sdemoapp/general
+
 ## エンドポイント
 
 - /liveness Liveness Probe

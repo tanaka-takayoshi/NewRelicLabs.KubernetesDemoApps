@@ -1,20 +1,20 @@
-�B
+# NewRelicLabs.KubernetesDemoApps
 
+Kubernetes環境向けに、負荷をかけたり、外部呼び出しをしたりするデモアプリ
 
-# �G���h�|�C���g
+メモリーやCPUの負荷処理は https://github.com/dotnet/samples/tree/master/core/diagnostics/DiagnosticScenarios を参考にしています。
 
-/liveness Liveness Probe
-/readiness Readiness Probe
-/probe?type={readiness|liveness}&disables=true Probe��ON/OFF
+## エンドポイント
 
-/diag/deadlock
-/diag/highcpu/{milliseconds}
-/diag/memleak/{kb}
-/diag/memspike/{seconds}
-/diag/crash �N���b�V��
+- /liveness Liveness Probe
+- /readiness Readiness Probe
+- /probe?type={readiness|liveness}&disables=true ProbeのON/OFF
 
-/invoke �����[�g�Ăяo���̃`�F�[���B���ϐ� `REMOVE_URL` �Ŏw�肳�ꂽURL��GET���N�G�X�g�𓊂��܂��B
+- /diag/deadlock
+- /diag/highcpu/{milliseconds}
+- /diag/memleak/{kb}
+- /diag/memspike/{seconds}
+- /diag/crash クラッシュ
+
+- /invoke リモート呼び出しのチェーン。環境変数 `REMOVE_URL` で指定されたURLにGETリクエストを投げます。
  
-
-
-https://github.com/dotnet/samples/tree/master/core/diagnostics/DiagnosticScenarios
